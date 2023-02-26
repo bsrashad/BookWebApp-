@@ -17,8 +17,6 @@ public class RegisterServlet extends HttpServlet {
 	 
 	private static final String query ="INSERT INTO BOOKDATA(BOOKNAME,BOOKEDITION,BOOKPRICE) VALUES(?,?,?)";
 	
-	
-	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
@@ -67,12 +65,7 @@ public class RegisterServlet extends HttpServlet {
 		pWriter.println("<a href='home.html'>Home</a>");
 		pWriter.print("<br>");
 		pWriter.println("<a href='booklist'>BookList</a>");
-		
-		
-		
-		
-		
-		
+
 		
 	}
 	
@@ -80,15 +73,4 @@ public class RegisterServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 	doGet(req, resp);
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }

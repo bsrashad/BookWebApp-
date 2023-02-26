@@ -84,11 +84,7 @@ private static final String query ="SELECT ID,BOOKNAME,BOOKEDITION,BOOKPRICE FRO
 		pWriter.print("<br>");
 		pWriter.print("<br>");
 		pWriter.println("<a href='home.html'>Home</a>");
-		
-	
-		
-		
-		
+
 		
 	}
 	
@@ -96,14 +92,4 @@ private static final String query ="SELECT ID,BOOKNAME,BOOKEDITION,BOOKPRICE FRO
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 	doGet(req, resp);
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }

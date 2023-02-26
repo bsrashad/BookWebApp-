@@ -16,10 +16,7 @@ import jakarta.servlet.http.HttpServletResponse;
 @WebServlet("/editurl")
 public class EditingServlet extends HttpServlet {
 
-	
 private static final String query ="UPDATE BOOKDATA SET BOOKNAME=?,BOOKEDITION=?,BOOKPRICE=? WHERE ID=?";
-	
-	
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -76,18 +73,10 @@ private static final String query ="UPDATE BOOKDATA SET BOOKNAME=?,BOOKEDITION=?
 		pWriter.print("<br>");
 		pWriter.println("<a href='booklist'>BookList</a>");
 		
-	
-		
-		
-		
-		
 	}
 	
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 	doGet(req, resp);
 	}
-	
-	
-	
 }
